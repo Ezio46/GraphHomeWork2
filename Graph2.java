@@ -6,11 +6,10 @@ public class Graph2 {
 
     public Graph2() {
         this.adjacencyList = new HashMap<>();
-        for (int i = 1; i <= 10; i++) { // Вершины теперь от 1 до 10
+        for (int i = 1; i <= 10; i++) { 
             adjacencyList.put(i, new ArrayList<>());
         }
 
-        // Добавляем ребра (без циклов) - пример
         adjacencyList.get(1).add(2);
         adjacencyList.get(1).add(3);
         adjacencyList.get(2).add(4);
